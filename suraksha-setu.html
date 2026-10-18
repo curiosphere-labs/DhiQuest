@@ -1,0 +1,1319 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SurakshaSetu™ by DhiQuest™ | POSH, POCSO & Safety Learning</title>
+  <meta name="description" content="Learn child safety, POCSO reporting responsibilities, POSH workplace safeguards, constitutional foundations and India&#39;s new criminal laws through self-paced learning modules." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=Rozha+One&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            devanagari: ['"Rozha One"', 'serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            dhi: {
+              navy: '#0c1222',
+              midnight: '#1e1b4b',
+              royal: '#2563eb',
+              gold: '#f59e0b',
+              sunGlow: '#fbbf24',
+              emerald: '#047857',
+              deepGreen: '#064e3b'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.82);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.9);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+    }
+    .glass-card-active {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 2px solid #059669;
+      box-shadow: 0 14px 40px rgba(5, 150, 105, 0.16);
+    }
+    .hero-mesh {
+      background-color: #064e3b;
+      background-image: 
+        radial-gradient(at 88% 12%, rgba(4, 120, 87, 0.65) 0px, transparent 55%),
+        radial-gradient(at 12% 88%, #0f172a 0px, transparent 60%),
+        radial-gradient(at 50% 50%, rgba(12, 18, 34, 0.95) 0px, transparent 75%);
+    }
+    @keyframes subtle-pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.02); }
+    }
+    .animate-subtle {
+      animation: subtle-pulse 6s ease-in-out infinite;
+    }
+    @media print {
+      body * { visibility: hidden; }
+      #certificateArea, #certificateArea * { visibility: visible; }
+      #certificateArea {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        margin: 0;
+        padding: 24px;
+        box-shadow: none !important;
+        border: 4px double #047857 !important;
+      }
+    }
+  </style>
+</head>
+<body class="bg-slate-100 text-slate-800 font-sans antialiased min-h-screen relative selection:bg-emerald-200">
+
+  <!-- Ambient Light Gradients -->
+  <div class="fixed inset-0 pointer-events-none -z-10 overflow-hidden">
+    <div class="absolute -top-32 -left-32 w-96 h-96 bg-emerald-300/25 rounded-full blur-3xl"></div>
+    <div class="absolute top-1/3 -right-32 w-96 h-96 bg-teal-200/25 rounded-full blur-3xl"></div>
+    <div class="absolute top-2/3 -left-32 w-96 h-96 bg-amber-200/20 rounded-full blur-3xl"></div>
+    <div class="absolute -bottom-32 right-1/3 w-96 h-96 bg-emerald-200/20 rounded-full blur-3xl"></div>
+  </div>
+
+  <!-- Statutory Emergency Helpline Ribbon -->
+  <aside aria-label="Statutory Helplines" class="bg-slate-900/95 backdrop-blur-md text-slate-200 px-4 py-2 sticky top-0 z-50 border-b border-slate-800">
+    <div class="max-w-6xl mx-auto flex flex-wrap justify-between items-center text-xs gap-2">
+      <div class="flex items-center gap-2 font-semibold tracking-wide">
+        <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+        <span class="text-emerald-400">Safety & Emergency Helplines:</span>
+      </div>
+      <div class="flex items-center gap-2 sm:gap-4">
+        <a href="tel:1098" class="bg-white/10 hover:bg-emerald-600 px-2.5 py-1 rounded-md text-white font-medium flex items-center gap-1.5 transition">
+          <i data-lucide="phone" class="w-3.5 h-3.5 text-emerald-300"></i> Childline: <strong>1098</strong>
+        </a>
+        <a href="tel:1091" class="bg-white/10 hover:bg-emerald-600 px-2.5 py-1 rounded-md text-white font-medium flex items-center gap-1.5 transition">
+          <i data-lucide="phone" class="w-3.5 h-3.5 text-emerald-300"></i> Women: <strong>1091</strong>
+        </a>
+        <a href="https://cybercrime.gov.in" target="_blank" rel="noopener noreferrer" class="bg-white/10 hover:bg-emerald-600 px-2.5 py-1 rounded-md text-white font-medium flex items-center gap-1.5 transition">
+          <i data-lucide="globe" class="w-3.5 h-3.5 text-emerald-300"></i> Cyber: <strong>1930</strong>
+        </a>
+        <a href="tel:112" class="bg-rose-600/85 hover:bg-rose-600 px-2.5 py-1 rounded-md text-white font-bold flex items-center gap-1.5 transition">
+          <i data-lucide="phone-call" class="w-3.5 h-3.5"></i> Emergency: <strong>112</strong>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Navigation Bar with DhiQuest Emblem & SurakshaSetu Seal -->
+  <header class="bg-slate-900/90 backdrop-blur-md border-b border-slate-800 text-white z-40">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
+      
+      <!-- Brand Logo & Identity Group -->
+      <div class="flex items-center gap-3">
+        <!-- Handcrafted DhiQuest Vector Logo -->
+        <div class="w-10 h-10 relative flex items-center justify-center shrink-0">
+          <svg viewBox="0 0 120 100" class="w-full h-full drop-shadow-sm" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M60 42 L60 8" stroke="#F59E0B" stroke-width="4.5" stroke-linecap="round"/>
+            <path d="M46 44 L32 18" stroke="#F59E0B" stroke-width="4" stroke-linecap="round"/>
+            <path d="M74 44 L88 18" stroke="#F59E0B" stroke-width="4" stroke-linecap="round"/>
+            <path d="M34 50 L14 34" stroke="#FBBF24" stroke-width="3.5" stroke-linecap="round"/>
+            <path d="M86 50 L106 34" stroke="#FBBF24" stroke-width="3.5" stroke-linecap="round"/>
+            <path d="M26 60 L6 54" stroke="#FBBF24" stroke-width="3" stroke-linecap="round"/>
+            <path d="M94 60 L114 54" stroke="#FBBF24" stroke-width="3" stroke-linecap="round"/>
+            <path d="M38 52 A 25 25 0 0 1 82 52" stroke="#F59E0B" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <path d="M60 88 C45 84 25 80 8 85 C14 62 25 54 58 56 Z" fill="#1E1B4B" stroke="#2563EB" stroke-width="2"/>
+            <path d="M60 88 C45 81 28 78 12 82 C18 64 30 58 58 59 Z" fill="#2563EB"/>
+            <path d="M60 88 C75 84 95 80 112 85 C106 62 95 54 62 56 Z" fill="#1E1B4B" stroke="#2563EB" stroke-width="2"/>
+            <path d="M60 88 C75 81 92 78 108 82 C102 64 90 58 62 59 Z" fill="#2563EB"/>
+            <polygon points="60,88 56,92 64,92" fill="#F59E0B"/>
+            <text x="60" y="52" font-family="'Rozha One', serif" font-weight="900" font-size="34" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">धि</text>
+          </svg>
+        </div>
+        
+        <div>
+          <div class="flex items-baseline gap-1.5">
+            <span class="text-lg font-black tracking-tight text-white font-sans">
+              Dhi<span class="text-blue-400">Quest</span><span class="text-amber-400 text-xs font-mono font-bold align-top">™</span>
+            </span>
+            <span class="text-slate-500 font-normal">/</span>
+            <span class="text-base font-extrabold text-emerald-400">
+              Suraksha<span class="text-white">Setu</span>
+            </span>
+          </div>
+          <p class="text-[9px] text-slate-300 font-mono tracking-widest uppercase font-bold hidden sm:block">
+            STATUTORY COMPLIANCE & SAFETY INITIATIVE
+          </p>
+        </div>
+      </div>
+
+      <!-- Quick Action Badges -->
+      <div class="flex items-center gap-2">
+        <a href="#inquiry" class="px-3.5 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition flex items-center gap-1.5 shadow">
+          <i data-lucide="shield-check" class="w-3.5 h-3.5"></i>
+          <span>Institutional Inquiry</span>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Hero Banner with Prominent Left Brand Emblem -->
+  <section class="hero-mesh text-white py-12 sm:py-16 px-4 sm:px-6 shadow-xl relative overflow-hidden border-b border-slate-800">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
+      
+      <!-- Left Prominent DhiQuest & SurakshaSetu Showcase Tile -->
+      <div class="lg:col-span-4 flex flex-col items-center justify-center text-center">
+        <div class="w-44 h-44 sm:w-52 sm:h-52 p-4 rounded-3xl bg-slate-900/85 backdrop-blur-md border border-emerald-500/30 shadow-2xl flex items-center justify-center relative animate-subtle">
+          <svg viewBox="0 0 120 100" class="w-full h-full drop-shadow-xl" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M60 42 L60 8" stroke="#F59E0B" stroke-width="4.5" stroke-linecap="round"/>
+            <path d="M46 44 L32 18" stroke="#F59E0B" stroke-width="4" stroke-linecap="round"/>
+            <path d="M74 44 L88 18" stroke="#F59E0B" stroke-width="4" stroke-linecap="round"/>
+            <path d="M34 50 L14 34" stroke="#FBBF24" stroke-width="3.5" stroke-linecap="round"/>
+            <path d="M86 50 L106 34" stroke="#FBBF24" stroke-width="3.5" stroke-linecap="round"/>
+            <path d="M26 60 L6 54" stroke="#FBBF24" stroke-width="3" stroke-linecap="round"/>
+            <path d="M94 60 L114 54" stroke="#FBBF24" stroke-width="3" stroke-linecap="round"/>
+            <path d="M38 52 A 25 25 0 0 1 82 52" stroke="#F59E0B" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <path d="M60 88 C45 84 25 80 8 85 C14 62 25 54 58 56 Z" fill="#1E1B4B" stroke="#2563EB" stroke-width="2"/>
+            <path d="M60 88 C45 81 28 78 12 82 C18 64 30 58 58 59 Z" fill="#2563EB"/>
+            <path d="M60 88 C75 84 95 80 112 85 C106 62 95 54 62 56 Z" fill="#1E1B4B" stroke="#2563EB" stroke-width="2"/>
+            <path d="M60 88 C75 81 92 78 108 82 C102 64 90 58 62 59 Z" fill="#2563EB"/>
+            <polygon points="60,88 56,92 64,92" fill="#F59E0B"/>
+            <text x="60" y="52" font-family="'Rozha One', serif" font-weight="900" font-size="34" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">धि</text>
+          </svg>
+        </div>
+
+        <div class="mt-3 space-y-0.5">
+          <div class="text-lg font-black tracking-tight text-white font-sans">
+            Dhi<span class="text-blue-400">Quest</span><span class="text-amber-400 text-xs font-mono font-bold align-top">™</span>
+          </div>
+          <p class="text-[10px] tracking-[0.2em] text-amber-400 uppercase font-black font-mono">
+            ANCIENT WISDOM. BRIGHTER FUTURES.
+          </p>
+          <p class="text-[9px] text-emerald-300 font-semibold uppercase tracking-wider">
+            LEARN • THINK • EXCEL • SAFEGUARD
+          </p>
+        </div>
+      </div>
+
+      <!-- Right Content Header -->
+      <div class="lg:col-span-8 space-y-4 text-center lg:text-left">
+        <div class="inline-flex items-center gap-2 bg-emerald-400/10 border border-emerald-400/30 text-emerald-200 text-xs px-3.5 py-1 rounded-full font-semibold backdrop-blur-md">
+          <i data-lucide="shield-check" class="w-3.5 h-3.5 text-emerald-300"></i>
+          <span>CBSE Safety Norms • POSH & POCSO Frameworks • BNS Criminal Code</span>
+        </div>
+
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-white leading-tight">
+          SurakshaSetu™ <span class="text-emerald-400">Compliance Initiative</span>
+        </h1>
+        
+        <p class="text-xs sm:text-sm text-emerald-100/90 leading-relaxed max-w-2xl">
+          A self-paced learning initiative by <strong>DhiQuest™</strong> for students and parents, educators, school administrators, and workplace teams. Learn the fundamentals of child safety and workplace dignity, complete an external assessment, and follow the reviewed payment and certificate process.
+        </p>
+
+        <!-- Trust Metrics Bar -->
+        <div class="grid grid-cols-3 gap-2 sm:gap-4 max-w-xl pt-4 border-t border-emerald-700/40 text-left">
+          <div>
+            <div class="text-lg sm:text-xl font-black text-emerald-300">Self-paced</div>
+            <div class="text-[10px] text-emerald-100/70 uppercase tracking-wider font-semibold">Learning Modules</div>
+          </div>
+          <div>
+            <div class="text-lg sm:text-xl font-black text-emerald-300">Assessment</div>
+            <div class="text-[10px] text-emerald-100/70 uppercase tracking-wider font-semibold">External Google Form</div>
+          </div>
+          <div>
+            <div class="text-lg sm:text-xl font-black text-emerald-300">Reviewed</div>
+            <div class="text-[10px] text-emerald-100/70 uppercase tracking-wider font-semibold">Payment then certificate</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Main Container -->
+  <main class="max-w-6xl mx-auto p-4 sm:p-6 space-y-10 -mt-6">
+
+    <!-- Legal framework and programme transparency -->
+    <section id="complianceFramework" class="rounded-3xl bg-white border border-slate-200 shadow-sm p-6 sm:p-8">
+      <div class="max-w-3xl">
+        <span class="inline-flex items-center gap-2 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-100 px-3 py-1 text-xs font-bold"><i data-lucide="scale" class="w-4 h-4"></i> Learn • Understand • Safeguard</span>
+        <h2 class="text-2xl sm:text-3xl font-black text-slate-900 mt-4">Knowledge that supports safer communities</h2>
+        <p class="text-sm text-slate-600 leading-relaxed mt-3">SurakshaSetu brings together introductory learning on child protection, reporting responsibilities, workplace sexual-harassment prevention, and respectful institutional practices.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-4 mt-6">
+        <article class="rounded-2xl bg-emerald-50/70 border border-emerald-100 p-5"><div class="text-emerald-800 font-black">POCSO Act, 2012</div><p class="text-sm text-slate-600 mt-2">Child protection, age-appropriate safety awareness, confidentiality, and the importance of reporting suspected offences through appropriate channels.</p><a class="inline-flex items-center gap-1 mt-3 text-xs font-bold text-emerald-800" href="https://www.indiacode.nic.in/handle/123456789/17804?sam_handle=123456789%2F2517" target="_blank" rel="noopener noreferrer">Read POCSO Act <i data-lucide="external-link" class="w-3 h-3"></i></a></article>
+        <article class="rounded-2xl bg-indigo-50/70 border border-indigo-100 p-5"><div class="text-indigo-900 font-black">POSH Act, 2013</div><p class="text-sm text-slate-600 mt-2">Prevention of sexual harassment at work, awareness of complaint mechanisms, Internal Committee responsibilities, and respectful workplace practices.</p><a class="inline-flex items-center gap-1 mt-3 text-xs font-bold text-indigo-800" href="https://www.indiacode.nic.in/indiacode/handle/123456789/18898?view_type=browse" target="_blank" rel="noopener noreferrer">Read POSH Act <i data-lucide="external-link" class="w-3 h-3"></i></a></article>
+        <article class="rounded-2xl bg-amber-50/70 border border-amber-100 p-5"><div class="text-amber-900 font-black">Rights & responsibilities</div><p class="text-sm text-slate-600 mt-2">An introductory overview of safety, dignity, confidentiality, and responsible escalation in schools and workplaces.</p><span class="inline-flex items-center gap-1 mt-3 text-xs font-bold text-amber-900">Awareness-focused learning</span></article>
+      </div>
+      <p class="text-xs text-slate-500 leading-relaxed mt-5 border-t border-slate-100 pt-4">Important: This learning resource is for general education and awareness, not legal advice. It does not replace the current legislation, official guidance, qualified legal advice, or an institution’s own statutory procedures. Legal content should be reviewed before formal rollout.</p>
+    </section>
+
+    <!-- Constitutional Bastion: plain-language learning notes -->
+    <section id="constitutional-bastion" class="rounded-3xl bg-white border border-slate-200 shadow-sm p-6 sm:p-8">
+      <div class="max-w-3xl">
+        <span class="inline-flex items-center gap-2 rounded-full bg-indigo-50 text-indigo-800 border border-indigo-100 px-3 py-1 text-xs font-bold"><i data-lucide="landmark" class="w-4 h-4"></i> Constitutional Bastion</span>
+        <h2 class="text-2xl sm:text-3xl font-black text-slate-900 mt-4">The constitutional foundations of dignity, equality and safety</h2>
+        <p class="text-sm text-slate-600 leading-relaxed mt-3">These provisions provide important constitutional context for equality, liberty and protection. They do not all operate in the same way: Articles 14, 15, 19 and 21 are Fundamental Rights, while Article 39(d) is a Directive Principle of State Policy.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
+        <article class="rounded-2xl bg-indigo-50 border border-indigo-100 p-5"><p class="text-xs font-black uppercase tracking-widest text-indigo-700">Article 14</p><h3 class="font-black text-slate-900 mt-2">Equality before law</h3><p class="text-sm text-slate-700 mt-2 leading-relaxed">Requires equality before the law and equal protection of the laws. In safety and grievance systems, rules should be applied fairly and without arbitrary treatment.</p></article>
+        <article class="rounded-2xl bg-indigo-50 border border-indigo-100 p-5"><p class="text-xs font-black uppercase tracking-widest text-indigo-700">Article 15</p><h3 class="font-black text-slate-900 mt-2">Non-discrimination</h3><p class="text-sm text-slate-700 mt-2 leading-relaxed">Prohibits specified forms of discrimination by the State, including on grounds of sex, and permits certain special provisions. It forms part of the wider constitutional commitment to equality.</p></article>
+        <article class="rounded-2xl bg-indigo-50 border border-indigo-100 p-5"><p class="text-xs font-black uppercase tracking-widest text-indigo-700">Article 19</p><h3 class="font-black text-slate-900 mt-2">Freedoms</h3><p class="text-sm text-slate-700 mt-2 leading-relaxed">Protects specified freedoms for citizens, subject to the restrictions written into the Constitution. It should not be described as an unrestricted right to say or do anything.</p></article>
+        <article class="rounded-2xl bg-indigo-50 border border-indigo-100 p-5"><p class="text-xs font-black uppercase tracking-widest text-indigo-700">Article 21</p><h3 class="font-black text-slate-900 mt-2">Life and personal liberty</h3><p class="text-sm text-slate-700 mt-2 leading-relaxed">No person may be deprived of life or personal liberty except according to procedure established by law. Courts have interpreted this guarantee in ways that include dignity and privacy.</p></article>
+        <article class="rounded-2xl bg-amber-50 border border-amber-200 p-5 sm:col-span-2 lg:col-span-2"><p class="text-xs font-black uppercase tracking-widest text-amber-800">Article 39(d)</p><h3 class="font-black text-slate-900 mt-2">Equal pay for equal work</h3><p class="text-sm text-slate-700 mt-2 leading-relaxed">A Directive Principle directing the State towards equal pay for men and women for equal work. Article 37 says Directive Principles are not enforceable by courts in the same way as Fundamental Rights, although they are fundamental to governance.</p></article>
+      </div>
+      <a class="inline-flex items-center gap-2 mt-5 text-sm font-black text-indigo-800 hover:underline" href="https://www.indiacode.nic.in/bitstream/123456789/15240/1/constitution_of_india.pdf" target="_blank" rel="noopener noreferrer">Read the Constitution of India (India Code PDF) <i data-lucide="external-link" class="w-4 h-4"></i></a>
+    </section>
+
+    <!-- BNS primer -->
+    <section id="bns-overview" class="rounded-3xl bg-slate-950 text-white shadow-sm p-6 sm:p-8">
+      <div class="max-w-3xl"><span class="inline-flex items-center gap-2 rounded-full bg-emerald-400/10 text-emerald-200 border border-emerald-400/20 px-3 py-1 text-xs font-bold"><i data-lucide="scale" class="w-4 h-4"></i> Criminal-law context</span>
+      <h2 class="text-2xl sm:text-3xl font-black mt-4">Understanding the Bharatiya Nyaya Sanhita (BNS), 2023</h2>
+      <p class="text-sm text-slate-300 mt-3 leading-relaxed">The BNS is India's principal substantive criminal code that replaced the Indian Penal Code (IPC) from 1 July 2024, subject to applicable transitional and savings provisions. It defines offences and punishments; it is not the procedural code or evidence law.</p></div>
+      <div class="grid md:grid-cols-3 gap-4 mt-6">
+        <article class="rounded-2xl bg-white/5 border border-white/10 p-5"><h3 class="font-black text-emerald-300">BNS, 2023</h3><p class="text-sm text-slate-300 mt-2 leading-relaxed">Substantive criminal law: offences, definitions and punishments. It replaced the IPC for new-law purposes from 1 July 2024.</p></article>
+        <article class="rounded-2xl bg-white/5 border border-white/10 p-5"><h3 class="font-black text-emerald-300">BNSS, 2023</h3><p class="text-sm text-slate-300 mt-2 leading-relaxed">Criminal procedure: processes such as investigation, arrest, trial and related procedural matters. It replaced the Code of Criminal Procedure, subject to applicable rules.</p></article>
+        <article class="rounded-2xl bg-white/5 border border-white/10 p-5"><h3 class="font-black text-emerald-300">BSA, 2023</h3><p class="text-sm text-slate-300 mt-2 leading-relaxed">Evidence law: rules concerning evidence in judicial proceedings. It replaced the Indian Evidence Act, subject to applicable transitional provisions.</p></article>
+      </div>
+      <div class="mt-5 rounded-2xl border border-amber-400/30 bg-amber-400/10 p-5"><h3 class="font-black text-amber-200">How this relates to POSH and POCSO</h3><p class="text-sm text-slate-200 mt-2 leading-relaxed">The BNS does not replace the POSH Act or the POCSO Act. POSH provides a specific workplace prevention and complaint-redressal framework. POCSO is a special child-protection law with its own offences, reporting duties and child-friendly procedures. Where facts may engage more than one law, trained authorities and legal professionals assess how the laws interact.</p></div>
+      <a class="inline-flex items-center gap-2 mt-5 text-sm font-black text-emerald-300 hover:underline" href="https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf" target="_blank" rel="noopener noreferrer">Read the Bharatiya Nyaya Sanhita, 2023 <i data-lucide="external-link" class="w-4 h-4"></i></a>
+    </section>
+
+    <!-- Historical timeline -->
+    <section id="legal-timeline" class="rounded-3xl bg-white border border-slate-200 shadow-sm p-6 sm:p-8">
+      <h2 class="text-2xl sm:text-3xl font-black text-slate-900">Timeline: IPC to Vishaka, POSH and BNS</h2>
+      <p class="text-sm text-slate-600 mt-3 max-w-3xl leading-relaxed">A high-level timeline to understand how criminal law, constitutional principles and workplace-specific safeguards developed. These milestones are related but do not form a simple one-law replacement chain.</p>
+      <div class="mt-6 space-y-4 border-l-2 border-emerald-200 ml-3 pl-6">
+        <article class="relative"><span class="absolute -left-[33px] top-1 w-4 h-4 rounded-full bg-emerald-600 ring-4 ring-emerald-50"></span><p class="text-xs uppercase tracking-widest font-black text-emerald-700">1860</p><h3 class="font-black text-slate-900 mt-1">Indian Penal Code (IPC)</h3><p class="text-sm text-slate-600 mt-1">The IPC became the principal general criminal code for India for many decades.</p></article>
+        <article class="relative"><span class="absolute -left-[33px] top-1 w-4 h-4 rounded-full bg-emerald-600 ring-4 ring-emerald-50"></span><p class="text-xs uppercase tracking-widest font-black text-emerald-700">13 August 1997</p><h3 class="font-black text-slate-900 mt-1">Vishaka v. State of Rajasthan</h3><p class="text-sm text-slate-600 mt-1">The Supreme Court laid down workplace sexual-harassment guidelines grounded in constitutional rights, to operate until legislation was enacted.</p></article>
+        <article class="relative"><span class="absolute -left-[33px] top-1 w-4 h-4 rounded-full bg-emerald-600 ring-4 ring-emerald-50"></span><p class="text-xs uppercase tracking-widest font-black text-emerald-700">14 November 2012</p><h3 class="font-black text-slate-900 mt-1">POCSO Act in force</h3><p class="text-sm text-slate-600 mt-1">A special legal framework for offences against children, including reporting duties and child-friendly procedures, came into force.</p></article>
+        <article class="relative"><span class="absolute -left-[33px] top-1 w-4 h-4 rounded-full bg-emerald-600 ring-4 ring-emerald-50"></span><p class="text-xs uppercase tracking-widest font-black text-emerald-700">9 December 2013</p><h3 class="font-black text-slate-900 mt-1">POSH Act in force</h3><p class="text-sm text-slate-600 mt-1">The Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013 established a statutory prevention and complaint-redressal framework.</p></article>
+        <article class="relative"><span class="absolute -left-[33px] top-1 w-4 h-4 rounded-full bg-emerald-600 ring-4 ring-emerald-50"></span><p class="text-xs uppercase tracking-widest font-black text-emerald-700">25 December 2023 / 1 July 2024</p><h3 class="font-black text-slate-900 mt-1">New criminal laws enacted and commenced</h3><p class="text-sm text-slate-600 mt-1">BNS, BNSS and BSA received assent on 25 December 2023 and came into force on 1 July 2024, subject to their provisions and applicable transitional rules.</p></article>
+      </div>
+      <div class="mt-6 flex flex-wrap gap-3"><a class="rounded-xl bg-slate-100 hover:bg-slate-200 px-4 py-3 text-xs font-black text-slate-800" href="https://www.sci.gov.in/aor-examination/" target="_blank" rel="noopener noreferrer">Supreme Court: Vishaka judgment listing</a><a class="rounded-xl bg-slate-100 hover:bg-slate-200 px-4 py-3 text-xs font-black text-slate-800" href="https://www.indiacode.nic.in/indiacode/handle/123456789/18898?view_type=browse" target="_blank" rel="noopener noreferrer">POSH Act on India Code</a><a class="rounded-xl bg-slate-100 hover:bg-slate-200 px-4 py-3 text-xs font-black text-slate-800" href="https://www.indiacode.nic.in/handle/123456789/17804?sam_handle=123456789%2F2517" target="_blank" rel="noopener noreferrer">POCSO Act on India Code</a></div>
+    </section>
+
+    <!-- Open-source / official reading resources -->
+    <section id="study-library" class="rounded-3xl bg-white border border-slate-200 shadow-sm p-6 sm:p-8">
+      <span class="inline-flex items-center gap-2 rounded-full bg-amber-50 text-amber-900 border border-amber-100 px-3 py-1 text-xs font-bold"><i data-lucide="library" class="w-4 h-4"></i> Study Library</span>
+      <h2 class="text-2xl sm:text-3xl font-black text-slate-900 mt-4">Read the primary sources</h2>
+      <p class="text-sm text-slate-600 mt-3 max-w-3xl leading-relaxed">For accuracy, start with the legislation and official guidance. The linked laws are public resources; some government pages may change their layout over time. Always check the current consolidated text and rules before relying on a provision.</p>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
+        <a href="https://www.indiacode.nic.in/handle/123456789/17804?sam_handle=123456789%2F2517" target="_blank" rel="noopener noreferrer" class="rounded-2xl border border-emerald-100 bg-emerald-50/70 p-5 hover:shadow-md transition"><h3 class="font-black text-emerald-950">POCSO Act, 2012</h3><p class="text-xs text-slate-600 mt-2">Official India Code record and sections on offences, reporting, confidentiality and child-friendly processes.</p><span class="text-xs font-black text-emerald-800 inline-flex gap-1 items-center mt-3">Open law <i data-lucide="external-link" class="w-3 h-3"></i></span></a>
+        <a href="https://www.indiacode.nic.in/indiacode/handle/123456789/18898?view_type=browse" target="_blank" rel="noopener noreferrer" class="rounded-2xl border border-indigo-100 bg-indigo-50/70 p-5 hover:shadow-md transition"><h3 class="font-black text-indigo-950">POSH Act, 2013</h3><p class="text-xs text-slate-600 mt-2">Statutory provisions for prevention, prohibition and redressal of workplace sexual harassment.</p><span class="text-xs font-black text-indigo-800 inline-flex gap-1 items-center mt-3">Open law <i data-lucide="external-link" class="w-3 h-3"></i></span></a>
+        <a href="https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf" target="_blank" rel="noopener noreferrer" class="rounded-2xl border border-slate-200 bg-slate-50 p-5 hover:shadow-md transition"><h3 class="font-black text-slate-900">Bharatiya Nyaya Sanhita, 2023</h3><p class="text-xs text-slate-600 mt-2">Official Act text for understanding the general criminal-law framework.</p><span class="text-xs font-black text-slate-800 inline-flex gap-1 items-center mt-3">Open law <i data-lucide="external-link" class="w-3 h-3"></i></span></a>
+        <a href="https://www.indiacode.nic.in/bitstream/123456789/15240/1/constitution_of_india.pdf" target="_blank" rel="noopener noreferrer" class="rounded-2xl border border-amber-100 bg-amber-50/70 p-5 hover:shadow-md transition"><h3 class="font-black text-amber-950">Constitution of India</h3><p class="text-xs text-slate-600 mt-2">Primary source for Articles 14, 15, 19, 21 and 39(d), among other provisions.</p><span class="text-xs font-black text-amber-900 inline-flex gap-1 items-center mt-3">Open PDF <i data-lucide="external-link" class="w-3 h-3"></i></span></a>
+        <a href="https://www.wcd.gov.in/women/legislations" target="_blank" rel="noopener noreferrer" class="rounded-2xl border border-rose-100 bg-rose-50/70 p-5 hover:shadow-md transition"><h3 class="font-black text-rose-950">Women & Child Development</h3><p class="text-xs text-slate-600 mt-2">Government legislation and POSH-related handbook resources.</p><span class="text-xs font-black text-rose-800 inline-flex gap-1 items-center mt-3">Open resources <i data-lucide="external-link" class="w-3 h-3"></i></span></a>
+        <a href="https://cytrain.ncrb.gov.in/staticpage/web_pages/Index.html" target="_blank" rel="noopener noreferrer" class="rounded-2xl border border-cyan-100 bg-cyan-50/70 p-5 hover:shadow-md transition"><h3 class="font-black text-cyan-950">NCRB New Criminal Laws Compendium</h3><p class="text-xs text-slate-600 mt-2">Official compendium with BNS, BNSS and BSA indexes and corresponding-section tables.</p><span class="text-xs font-black text-cyan-800 inline-flex gap-1 items-center mt-3">Open compendium <i data-lucide="external-link" class="w-3 h-3"></i></span></a>
+      </div>
+    </section>
+
+
+    <!-- Learner journey -->
+    <section id="learner-journey" class="rounded-3xl bg-gradient-to-br from-emerald-950 via-slate-900 to-indigo-950 text-white p-6 sm:p-8 shadow-lg">
+      <h2 class="text-2xl sm:text-3xl font-black">Your learning-to-certificate journey</h2><p class="text-sm text-slate-300 mt-2 max-w-3xl">Study is self-paced. The assessment, result review, payment and certificate issuance are separate steps.</p>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-3 mt-6">
+        <article class="rounded-2xl bg-white/5 border border-white/10 p-4"><span class="text-emerald-300 font-black text-xs">01</span><h3 class="font-black mt-2">Complete modules</h3><p class="text-xs text-slate-300 mt-2 leading-relaxed">Read each module, work through scenarios and mark it complete.</p></article>
+        <article class="rounded-2xl bg-white/5 border border-white/10 p-4"><span class="text-emerald-300 font-black text-xs">02</span><h3 class="font-black mt-2">Take assessment</h3><p class="text-xs text-slate-300 mt-2 leading-relaxed">Open the course-specific Google Form when it is available.</p></article>
+        <article class="rounded-2xl bg-white/5 border border-white/10 p-4"><span class="text-emerald-300 font-black text-xs">03</span><h3 class="font-black mt-2">Result review</h3><p class="text-xs text-slate-300 mt-2 leading-relaxed">DhiQuest reviews the submission and confirms whether the pass criteria are met.</p></article>
+        <article class="rounded-2xl bg-white/5 border border-white/10 p-4"><span class="text-amber-300 font-black text-xs">04</span><h3 class="font-black mt-2">Pay after passing</h3><p class="text-xs text-slate-300 mt-2 leading-relaxed">Eligible learners receive the relevant payment instructions. Fees: ₹49 / ₹59 / ₹69, depending on track.</p></article>
+        <article class="rounded-2xl bg-white/5 border border-white/10 p-4"><span class="text-amber-300 font-black text-xs">05</span><h3 class="font-black mt-2">Certificate issued</h3><p class="text-xs text-slate-300 mt-2 leading-relaxed">After payment is confirmed, the certificate is prepared and shared manually.</p></article>
+      </div>
+      <p class="text-[11px] text-slate-400 mt-5">Fees shown are planned certificate fees and are payable only after passing the assessment. No certificate is generated or verified automatically by this static webpage.</p>
+    </section>
+
+    <!-- Mac-Style Track Cards -->
+    <section id="tracks" class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      
+      <!-- Track 1: Student & Parent -->
+      <div id="card-student" onclick="loadTrack('student')" class="glass-card rounded-2xl p-5 cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-xl flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between mb-3">
+            <div class="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-700 flex items-center justify-center font-bold">
+              <i data-lucide="user-check" class="w-5 h-5"></i>
+            </div>
+            <span class="text-[10px] font-bold uppercase tracking-wider bg-slate-200/60 text-slate-700 px-2.5 py-0.5 rounded-full">Foundation</span>
+          </div>
+          <div class="flex flex-wrap items-center justify-between gap-2"><h3 class="font-bold text-slate-900 text-base">Child Safety & Boundaries</h3><span class="rounded-xl bg-amber-100 text-amber-900 px-3 py-1.5 text-sm font-black">₹49 <span class="text-[10px] font-bold">INR</span></span></div>
+          <p class="text-xs text-amber-800 font-semibold mt-0.5">Students, Teens & Parents</p>
+          <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+            Body autonomy, unsafe touch identification, digital grooming red flags, and safe circle reporting protocols.
+          </p>
+        </div>
+        <div class="mt-4 pt-3 border-t border-slate-200/60 flex justify-between items-center text-xs font-semibold text-slate-600">
+          <span>4 Micro-Lessons</span>
+          <span class="text-amber-700 flex items-center gap-0.5">Select <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></span>
+        </div>
+      </div>
+
+      <!-- Track 2: Educators & Staff -->
+      <div id="card-teacher" onclick="loadTrack('teacher')" class="glass-card-active rounded-2xl p-5 cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-xl flex flex-col justify-between relative">
+        <span class="absolute -top-3 right-4 bg-emerald-600 text-white text-[10px] font-bold px-3 py-0.5 rounded-full shadow-md uppercase tracking-wider">
+          Educator Track
+        </span>
+        <div>
+          <div class="flex items-center justify-between mb-3">
+            <div class="w-10 h-10 rounded-xl bg-emerald-500/15 text-emerald-800 flex items-center justify-center font-bold">
+              <i data-lucide="graduation-cap" class="w-5 h-5"></i>
+            </div>
+            <span class="text-[10px] font-bold uppercase tracking-wider bg-emerald-100 text-emerald-800 px-2.5 py-0.5 rounded-full">Statutory Duty</span>
+          </div>
+          <div class="flex flex-wrap items-center justify-between gap-2"><h3 class="font-bold text-slate-900 text-base">Educators & School Staff</h3><span class="rounded-xl bg-emerald-100 text-emerald-900 px-3 py-1.5 text-sm font-black">₹59 <span class="text-[10px] font-bold">INR</span></span></div>
+          <p class="text-xs text-emerald-800 font-semibold mt-0.5">POCSO Act (2012) Law</p>
+          <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+            Section 19 mandatory reporting, Section 21 personal penalties, disclosure handling, and identity masking safeguards.
+          </p>
+        </div>
+        <div class="mt-4 pt-3 border-t border-emerald-200 flex justify-between items-center text-xs font-semibold text-emerald-800">
+          <span>4 Micro-Lessons</span>
+          <span class="flex items-center gap-0.5 font-bold">Select <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></span>
+        </div>
+      </div>
+
+      <!-- Track 3: Workplace & IC -->
+      <div id="card-workplace" onclick="loadTrack('workplace')" class="glass-card rounded-2xl p-5 cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-xl flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between mb-3">
+            <div class="w-10 h-10 rounded-xl bg-indigo-500/10 text-indigo-700 flex items-center justify-center font-bold">
+              <i data-lucide="briefcase" class="w-5 h-5"></i>
+            </div>
+            <span class="text-[10px] font-bold uppercase tracking-wider bg-slate-200/60 text-slate-700 px-2.5 py-0.5 rounded-full">Corporate & IC</span>
+          </div>
+          <div class="flex flex-wrap items-center justify-between gap-2"><h3 class="font-bold text-slate-900 text-base">Workplace & IC Governance</h3><span class="rounded-xl bg-indigo-100 text-indigo-900 px-3 py-1.5 text-sm font-black">₹69 <span class="text-[10px] font-bold">INR</span></span></div>
+          <p class="text-xs text-indigo-800 font-semibold mt-0.5">POSH Act (2013) Protocol</p>
+          <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+            Hostile environment, Quid Pro Quo, Section 4 IC constitution, 90-day inquiry timelines, and anti-retaliation rules.
+          </p>
+        </div>
+        <div class="mt-4 pt-3 border-t border-slate-200/60 flex justify-between items-center text-xs font-semibold text-slate-600">
+          <span>4 Micro-Lessons</span>
+          <span class="text-indigo-700 flex items-center gap-0.5">Select <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Active Course Workspace (Glass styled, default loaded) -->
+    <section id="workspace" class="glass-card rounded-3xl p-6 sm:p-8 shadow-sm">
+      
+      <!-- Visual Course Header Card -->
+      <div id="courseBannerArea" class="rounded-2xl bg-gradient-to-r from-emerald-800 to-teal-900 text-white p-6 sm:p-7 relative overflow-hidden mb-8 shadow-md">
+        <!-- Background SVG Motif -->
+        <div class="absolute right-0 top-0 bottom-0 w-1/3 opacity-10 flex items-center justify-center pointer-events-none">
+          <svg class="w-56 h-56 text-white" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/>
+          </svg>
+        </div>
+
+        <div class="relative z-10 max-w-xl">
+          <span id="activeTrackTag" class="text-[10px] font-mono tracking-widest uppercase bg-emerald-400/20 text-emerald-200 border border-emerald-400/30 px-2.5 py-1 rounded-full">
+            STATUTORY COURSE TRACK
+          </span>
+          <h2 id="activeTrackTitle" class="text-xl sm:text-2xl font-black mt-2 text-white">
+            POCSO Act (2012) Statutory Compliance for Educators & Staff
+          </h2>
+          <p id="activeTrackSubtitle" class="text-xs sm:text-sm text-emerald-100/80 mt-1 leading-relaxed">
+            Mandatory reporting protocols, penal liabilities under Section 21, confidentiality safeguards, and CBSE safety guidelines.
+          </p>
+          <div id="trackProgressWrap" class="mt-4 max-w-md">
+            <div class="flex justify-between text-[10px] font-bold text-emerald-100/70 uppercase tracking-wider"><span>Track Progress</span><span id="trackProgressText">0/4 modules • 0% complete</span></div>
+            <div class="h-2 bg-emerald-950/70 rounded-full mt-1.5 overflow-hidden"><div id="trackProgress" class="h-full bg-emerald-400 rounded-full transition-all duration-300" style="width:0%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Curriculum Modules Grid -->
+      <div id="modulesContainer" class="space-y-4">
+        <!-- Injected via JavaScript -->
+      </div>
+
+      <p class="text-xs text-slate-500 mt-5">Select a course card, then open each module using its heading. All modules start closed. Progress is saved in this browser and is not secure proof of completion; assessment outcomes are reviewed separately.</p>
+
+      <!-- Google Forms Final Assessment Call-to-Action -->
+      <div class="mt-8 pt-6 border-t border-slate-200/80 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <div class="text-xs text-slate-500 flex items-center gap-2">
+          <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+          <span>Complete all 4 modules, then open the track-specific Google Form assessment. A passing result is reviewed separately; eligible learners receive a payment link, and certificates are issued manually after payment confirmation.</span>
+        </div>
+        <button onclick="openGoogleAssessment()" id="assessmentButton" class="w-full sm:w-auto bg-emerald-700 hover:bg-emerald-800 text-white text-sm font-bold px-7 py-3 rounded-xl flex items-center justify-center gap-2 shadow-md transition-all duration-200 hover:shadow-lg">
+          <i data-lucide="clipboard-check" class="w-4 h-4"></i> Take Final Assessment
+        </button>
+      </div>
+
+      <!--
+        GOOGLE FORMS CONFIGURATION
+        Replace ONLY the three placeholder URLs below when your Google Forms are ready.
+        student   = Student & Parent / Child Safety & Cyber Awareness
+        teacher   = POCSO Educator & Staff
+        workplace = POSH Workplace / Internal Committee
+      -->
+
+      <!-- Quiz Engine Area (Hidden initially) -->
+      <div id="quizContainer" class="hidden" aria-hidden="true">
+        <div class="flex justify-between items-center mb-4">
+          <span class="text-[11px] font-bold uppercase tracking-wider text-emerald-800 bg-emerald-100/80 px-3 py-1 rounded-full border border-emerald-300">
+            Scenario Evaluation
+          </span>
+          <span id="quizProgressText" class="text-xs font-bold text-slate-500">Question 1 of 5</span>
+        </div>
+
+        <div id="questionBox" class="mb-5"></div>
+        <div id="optionsList" class="space-y-3"></div>
+        <div id="feedbackBox" class="hidden mt-5 p-4 rounded-xl text-xs sm:text-sm leading-relaxed"></div>
+
+        <div class="mt-6 flex justify-end">
+          <button id="nextBtn" onclick="nextQuestion()" class="hidden bg-slate-900 hover:bg-slate-800 text-white px-6 py-2.5 rounded-xl text-sm font-bold transition">
+            Continue
+          </button>
+        </div>
+      </div>
+
+      <!-- Quiz Results -->
+      <div id="resultContainer" class="hidden" aria-hidden="true">
+        <div id="resultIcon" class="w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-3"></div>
+        <h3 id="resultTitle" class="text-2xl font-black text-slate-900"></h3>
+        <p id="resultSubtitle" class="text-sm text-slate-600 mt-2 mb-6 max-w-lg mx-auto"></p>
+        
+        <div id="certificateUnlockArea" class="hidden max-w-lg mx-auto glass-card border border-emerald-300 rounded-2xl p-6 text-left shadow-lg">
+          <h4 class="text-sm font-bold text-emerald-950 mb-1 flex items-center gap-1.5">
+            <i data-lucide="award" class="w-4 h-4 text-emerald-700"></i> Generate Audit-Ready Certificate
+          </h4>
+          <p class="text-xs text-slate-500 mb-4">Provide candidate details for the compliance verification register.</p>
+          
+          <label class="block text-xs font-bold text-slate-700 mb-1">Participant Full Name:</label>
+          <input type="text" id="certUserName" placeholder="e.g., Dr. Ananya Sen" class="w-full border border-slate-300 rounded-lg px-3 py-2 text-sm mb-3 bg-white/90 focus:ring-2 focus:ring-emerald-500 focus:outline-none" />
+          
+          <label class="block text-xs font-bold text-slate-700 mb-1">School / Organization Name:</label>
+          <input type="text" id="certOrgName" placeholder="e.g., Delhi Public School / TechCorp India" class="w-full border border-slate-300 rounded-lg px-3 py-2 text-sm mb-4 bg-white/90 focus:ring-2 focus:ring-emerald-500 focus:outline-none" />
+
+          <button onclick="generateCertificate()" class="w-full bg-emerald-700 hover:bg-emerald-800 text-white font-bold py-2.5 rounded-xl text-sm transition shadow">
+            Preview & Print Certificate
+          </button>
+        </div>
+
+        <button id="retakeBtn" onclick="retakeQuiz()" class="mt-5 text-sm text-emerald-800 font-bold hover:underline inline-block">
+          Retake Assessment
+        </button>
+      </div>
+
+    </section>
+
+    <!-- Certificate Section -->
+    <section id="certificateSection" class="hidden">
+      <div class="bg-white border-8 border-double border-emerald-900 p-8 sm:p-12 rounded-3xl shadow-2xl relative max-w-3xl mx-auto text-center" id="certificateArea">
+        
+        <!-- Certificate Header with DhiQuest / SurakshaSetu Official Seal -->
+        <div class="flex justify-between items-start border-b-2 border-emerald-800/20 pb-4 mb-6">
+          <div class="flex items-center gap-3 text-left">
+            <div class="w-12 h-12 shrink-0">
+              <svg viewBox="0 0 120 100" class="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M60 42 L60 8" stroke="#F59E0B" stroke-width="4.5" stroke-linecap="round"/>
+                <path d="M46 44 L32 18" stroke="#F59E0B" stroke-width="4" stroke-linecap="round"/>
+                <path d="M74 44 L88 18" stroke="#F59E0B" stroke-width="4" stroke-linecap="round"/>
+                <path d="M34 50 L14 34" stroke="#FBBF24" stroke-width="3.5" stroke-linecap="round"/>
+                <path d="M86 50 L106 34" stroke="#FBBF24" stroke-width="3.5" stroke-linecap="round"/>
+                <path d="M38 52 A 25 25 0 0 1 82 52" stroke="#F59E0B" stroke-width="3" fill="none" stroke-linecap="round"/>
+                <path d="M60 88 C45 84 25 80 8 85 C14 62 25 54 58 56 Z" fill="#1E1B4B" stroke="#2563EB" stroke-width="2"/>
+                <path d="M60 88 C45 81 28 78 12 82 C18 64 30 58 58 59 Z" fill="#2563EB"/>
+                <path d="M60 88 C75 84 95 80 112 85 C106 62 95 54 62 56 Z" fill="#1E1B4B" stroke="#2563EB" stroke-width="2"/>
+                <path d="M60 88 C75 81 92 78 108 82 C102 64 90 58 62 59 Z" fill="#2563EB"/>
+                <polygon points="60,88 56,92 64,92" fill="#F59E0B"/>
+                <text x="60" y="52" font-family="'Rozha One', serif" font-weight="900" font-size="34" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">धि</text>
+              </svg>
+            </div>
+            <div>
+              <h5 class="font-black text-emerald-950 text-base sm:text-lg tracking-wider">
+                DhiQuest™ / SURAKSHASETU™
+              </h5>
+              <p class="text-[10px] text-slate-500 font-mono tracking-widest uppercase">
+                Certificate prepared after assessment review and payment confirmation
+              </p>
+            </div>
+          </div>
+          <div class="text-right">
+            <span id="certId" class="text-xs font-mono font-bold text-emerald-800 bg-emerald-50 px-2.5 py-1 rounded border border-emerald-200">
+              ID: DQ-SS-2026-XXXX
+            </span>
+          </div>
+        </div>
+
+        <p class="text-xs uppercase tracking-widest text-slate-400 font-extrabold mb-1">Certificate issuance is handled manually by DhiQuest</p>
+        <p class="text-xs text-slate-600">Participant</p>
+        
+        <h2 id="certDisplayName" class="text-2xl sm:text-3xl font-black text-slate-900 my-3 underline decoration-emerald-600 underline-offset-8">
+          Candidate Name
+        </h2>
+        
+        <p class="text-xs text-slate-600">representing <span id="certDisplayOrg" class="font-bold text-slate-900">Institution Name</span></p>
+        <p class="text-xs text-slate-600 max-w-xl mx-auto mt-3 leading-relaxed">
+          Certificate details, assessment status, and completion record will be confirmed by DhiQuest before issuance.
+        </p>
+        <p id="certDisplayTrack" class="text-base sm:text-lg font-extrabold text-emerald-900 mt-2 mb-6 bg-emerald-50 py-1.5 px-4 rounded-md inline-block">
+          Module Title
+        </p>
+
+        <div class="flex justify-between items-end border-t-2 border-slate-200 pt-6 mt-8 text-left">
+          <div>
+            <p class="text-[10px] text-slate-400 uppercase tracking-wider font-bold">Certification Date</p>
+            <p id="certDate" class="text-xs font-bold text-slate-800">September 24, 2026</p>
+            <p class="text-[10px] text-slate-400 mt-1">Valid for Annual Statutory Audit Registers & Affiliation Files</p>
+          </div>
+          <div class="text-center">
+            <div class="w-14 h-14 bg-emerald-100 border-2 border-emerald-600 rounded-full flex items-center justify-center mx-auto mb-1 shadow-inner">
+              <i data-lucide="shield-check" class="w-8 h-8 text-emerald-800"></i>
+            </div>
+            <p class="text-[9px] text-emerald-950 font-black tracking-wider uppercase">DhiQuest™ Certified TTT Trainer Seal</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-6">
+        <button onclick="window.print()" class="bg-slate-900 hover:bg-slate-800 text-white text-sm font-bold px-8 py-3 rounded-xl inline-flex items-center gap-2 shadow-lg transition">
+          <i data-lucide="printer" class="w-4 h-4"></i> Print / Save Verified PDF
+        </button>
+      </div>
+    </section>
+
+    <!-- Glossary widget -->
+    <section id="glossary" class="rounded-3xl bg-white border border-slate-200 shadow-sm p-6 sm:p-8">
+      <div class="max-w-none"><span class="inline-flex items-center gap-2 rounded-full bg-indigo-50 text-indigo-800 border border-indigo-100 px-3 py-1 text-xs font-bold"><i data-lucide="book-a" class="w-4 h-4"></i> Quick reference</span><h2 class="text-2xl sm:text-3xl font-black text-slate-900 mt-4">POSH–POCSO Glossary</h2><p class="text-sm text-slate-600 mt-3">Search common terms used in the learning modules. Definitions are simplified for education and should be checked against the Act for legal use.</p></div>
+      <label for="glossarySearch" class="block text-xs font-black text-slate-700 mt-5 mb-2">Find a term</label><input id="glossarySearch" type="search" placeholder="Try: Internal Committee, grooming, SJPU, conciliation…" class="w-full border border-slate-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500" oninput="filterGlossary()" />
+      <div id="glossaryGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 mt-4"></div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="rounded-3xl bg-white border border-slate-200 shadow-sm p-6 sm:p-8">
+      <h2 class="text-2xl sm:text-3xl font-black text-slate-900">Frequently Asked Questions: POSH & POCSO</h2><p class="text-sm text-slate-600 mt-3 max-w-3xl">These answers provide general awareness, not a substitute for legal advice or current official guidance.</p>
+      <div class="space-y-3 mt-6">
+        <details class="rounded-2xl border border-slate-200 p-4"><summary class="font-black text-sm cursor-pointer">1. What does POCSO cover, and who is a child?</summary><p class="text-sm text-slate-600 leading-relaxed mt-3">The Protection of Children from Sexual Offences Act, 2012 addresses specified sexual offences against children and provides child-sensitive procedures. For the Act, a child is a person below 18 years of age. Consult the current Act for definitions and offence-specific provisions.</p></details>
+        <details class="rounded-2xl border border-slate-200 p-4"><summary class="font-black text-sm cursor-pointer">2. Is POCSO gender-neutral?</summary><p class="text-sm text-slate-600 leading-relaxed mt-3">Yes. The Act's definition of child is not restricted by gender, and its protections apply to children of any gender.</p></details>
+        <details class="rounded-2xl border border-slate-200 p-4"><summary class="font-black text-sm cursor-pointer">3. What should a school employee do after a child discloses possible sexual abuse?</summary><p class="text-sm text-slate-600 leading-relaxed mt-3">Stay calm, listen without blame or leading questions, avoid promising secrecy, preserve the child's dignity and safety, and promptly follow the mandatory reporting process under Section 19 by reporting to the Special Juvenile Police Unit or local police. Do not conduct an informal investigation or attempt mediation instead of reporting.</p></details>
+        <details class="rounded-2xl border border-slate-200 p-4"><summary class="font-black text-sm cursor-pointer">4. Can a school resolve a suspected POCSO offence internally?</summary><p class="text-sm text-slate-600 leading-relaxed mt-3">An internal meeting or disciplinary process must not be used as a substitute for statutory reporting. Section 19 reporting obligations should be followed where applicable; seek guidance from the designated authorities and qualified counsel.</p></details>
+        <details class="rounded-2xl border border-slate-200 p-4"><summary class="font-black text-sm cursor-pointer">5. Must every adult report a suspected POCSO offence?</summary><p class="text-sm text-slate-600 leading-relaxed mt-3">Section 19 imposes a reporting duty on a person who has apprehension that an offence under the Act is likely to be committed or knowledge that it has been committed. Section 21 addresses punishment for failure to report or record, subject to the provision's terms and exceptions.</p></details>
+        <details class="rounded-2xl border border-slate-200 p-4"><summary class="font-black text-sm cursor-pointer">6. What is the POSH Act?</summary><p class="text-sm text-slate-600 leading-relaxed mt-3">The Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013 creates a framework to prevent and prohibit workplace sexual harassment and provide a redressal mechanism for complaints covered by the Act.</p></details>
+        <details class="rounded-2xl border border-slate-200 p-4"><summary class="font-black text-sm cursor-pointer">7. What is the difference between an Internal Committee and a Local Committee?</summary><p class="text-sm text-slate-600 leading-relaxed mt-3">The employer constitutes an Internal Committee in workplaces covered by Section 4. The District Officer constitutes a Local Committee under Section 6 to receive complaints from specified workplaces or situations, including where an establishment has fewer than ten workers or where the complaint is against the employer. Check the exact statutory conditions before advising a person.</p></details>
+        <details class="rounded-2xl border border-slate-200 p-4"><summary class="font-black text-sm cursor-pointer">8. When is an Internal Committee required?</summary><p class="text-sm text-slate-600 leading-relaxed mt-3">Section 4 requires an employer to constitute an Internal Committee by written order at each office or administrative unit of a workplace with ten or more workers. The full statutory composition and nomination requirements should be checked in the Act.</p></details>
+        <details class="rounded-2xl border border-slate-200 p-4"><summary class="font-black text-sm cursor-pointer">9. What is the usual POSH complaint filing period?</summary><p class="text-sm text-slate-600 leading-relaxed mt-3">Section 9 generally provides a period of three months from the incident, or in a series of incidents from the last incident; the Committee may extend the period by up to a further three months for reasons recorded in writing where the circumstances prevented filing within the initial period. Seek advice promptly rather than assuming a deadline has passed.</p></details>
+        <details class="rounded-2xl border border-slate-200 p-4"><summary class="font-black text-sm cursor-pointer">10. What are the key POSH inquiry timelines?</summary><p class="text-sm text-slate-600 leading-relaxed mt-3">Under the Act, the inquiry is to be completed within 90 days; the Committee provides its report within 10 days of completion, and the employer or District Officer acts on the recommendations within 60 days. Specific steps and applicability should be verified against the Act and Rules.</p></details>
+        <details class="rounded-2xl border border-slate-200 p-4"><summary class="font-black text-sm cursor-pointer">11. Is conciliation compulsory under POSH?</summary><p class="text-sm text-slate-600 leading-relaxed mt-3">No. Under Section 10, conciliation may be initiated before inquiry only at the request of the aggrieved woman. A monetary settlement cannot be the basis of conciliation. The Committee should not pressure a complainant to choose it.</p></details>
+        <details class="rounded-2xl border border-slate-200 p-4"><summary class="font-black text-sm cursor-pointer">12. Can details of a POSH inquiry be shared widely?</summary><p class="text-sm text-slate-600 leading-relaxed mt-3">Section 16 restricts publication or communication of complaint contents, identities and inquiry proceedings, subject to the Act. Information should be shared only as permitted and necessary for the process; avoid circulating details through informal chats or public channels.</p></details>
+        <details class="rounded-2xl border border-slate-200 p-4"><summary class="font-black text-sm cursor-pointer">13. Does POSH cover work-related travel, events or digital communication?</summary><p class="text-sm text-slate-600 leading-relaxed mt-3">The statutory definition of workplace in Section 2(o) is not limited to a person's desk. It includes specified places visited arising out of or during employment and employer-provided transportation. Assess the facts and statutory definition rather than assuming an off-site or online incident is automatically outside the framework.</p></details>
+        <details class="rounded-2xl border border-slate-200 p-4"><summary class="font-black text-sm cursor-pointer">14. Does completing this course make someone a statutory expert or guarantee compliance?</summary><p class="text-sm text-slate-600 leading-relaxed mt-3">No. This is an awareness and learning programme. It does not confer a government licence, replace specialist legal advice, or guarantee that an organisation complies with all legal obligations.</p></details>
+        <details class="rounded-2xl border border-slate-200 p-4"><summary class="font-black text-sm cursor-pointer">15. How does certificate issuance work?</summary><p class="text-sm text-slate-600 leading-relaxed mt-3">Complete the learning modules, submit the relevant assessment, and wait for DhiQuest to review the result. If you meet the pass criteria, you receive payment instructions for the course's certificate fee. The certificate is prepared and shared manually after payment is confirmed.</p></details>
+      </div>
+    </section>
+
+    <!-- Institutional Training Enquiries -->
+    <section id="inquiry" class="bg-slate-900 text-white rounded-3xl p-6 sm:p-10 shadow-xl border border-slate-800">
+      <div class="max-w-3xl mx-auto">
+        <div class="text-center mb-8">
+          <span class="text-emerald-400 text-[10px] font-bold tracking-widest uppercase bg-emerald-950 border border-emerald-800 px-3 py-1 rounded-full">
+            Institutional Training
+          </span>
+          <h2 class="text-2xl sm:text-3xl font-black mt-3">Let's Build a Safer Organisation</h2>
+          <p class="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed max-w-2xl mx-auto">
+            Looking for POCSO, POSH, child-safety or institutional sensitisation training? Share your requirement through our short enquiry form and we'll get back to you with the batch details.
+          </p>
+        </div>
+
+        <!-- Replace the two contact placeholders below with your actual contact details. -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+          <a href="tel:+917978672104" class="group rounded-2xl border border-slate-700 bg-slate-800/70 hover:bg-slate-800 p-5 transition flex items-center gap-4">
+            <div class="w-11 h-11 rounded-xl bg-emerald-500/15 border border-emerald-500/30 flex items-center justify-center shrink-0">
+              <i data-lucide="phone" class="w-5 h-5 text-emerald-400"></i>
+            </div>
+            <div>
+              <p class="text-[10px] uppercase tracking-widest text-slate-400 font-bold">Call / WhatsApp</p>
+              <p class="text-sm font-bold text-white group-hover:text-emerald-300 transition">+91 - 7978672104</p>
+            </div>
+          </a>
+
+          <a href="mailto:sankhanil@gmail.com" class="group rounded-2xl border border-slate-700 bg-slate-800/70 hover:bg-slate-800 p-5 transition flex items-center gap-4">
+            <div class="w-11 h-11 rounded-xl bg-emerald-500/15 border border-emerald-500/30 flex items-center justify-center shrink-0">
+              <i data-lucide="mail" class="w-5 h-5 text-emerald-400"></i>
+            </div>
+            <div class="min-w-0">
+              <p class="text-[10px] uppercase tracking-widest text-slate-400 font-bold">Email</p>
+              <p class="text-sm font-bold text-white group-hover:text-emerald-300 transition break-all">sankhanil@gmail.com</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="rounded-2xl border border-emerald-500/20 bg-emerald-950/30 p-5 sm:p-6 text-center">
+          <div class="w-12 h-12 rounded-2xl bg-emerald-500/15 border border-emerald-500/30 flex items-center justify-center mx-auto mb-3">
+            <i data-lucide="clipboard-pen-line" class="w-6 h-6 text-emerald-400"></i>
+          </div>
+          <h3 class="text-lg font-black">Request a Training Batch</h3>
+          <p class="text-xs text-slate-300 mt-2 mb-5 max-w-xl mx-auto">
+            Tell us your organisation, training requirement, approximate batch size and preferred schedule. Your enquiry will be captured directly in our Google Form for follow-up and batch planning.
+          </p>
+          <a id="inquiryFormButton" href="#contact" onclick="openInquiryForm(); return false;"
+             class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black py-3.5 px-8 rounded-xl text-sm transition shadow-lg">
+            <i data-lucide="external-link" class="w-4 h-4"></i>
+            Submit Training Enquiry
+          </a>
+          <p class="text-[10px] text-slate-500 mt-3">Short Google Form • Your enquiry details will be used to contact you about training batches.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="text-center py-8 text-xs text-slate-400 border-t border-slate-200/80 mt-16 bg-white/50 backdrop-blur-sm">
+    <p>SurakshaSetu™ • A learning initiative by <strong>DhiQuest™</strong> &copy; 2026. Educational awareness only; not legal advice.</p>
+  </footer>
+
+  <!-- Complete Course Data & Controller Script -->
+  <script>
+    // PLACEHOLDER CONFIGURATION: replace these values after creating the Google Forms.
+    // Never use a made-up live URL: the page will clearly notify users while a form is not ready.
+    const assessmentFormUrls = {
+      student: 'https://forms.gle/REPLACE_STUDENT_FORM_ID',
+      teacher: 'https://forms.gle/REPLACE_POCSO_EDUCATOR_FORM_ID',
+      workplace: 'https://forms.gle/REPLACE_POSH_FORM_ID'
+    };
+    const inquiryFormUrl = 'https://forms.gle/REPLACE_INQUIRY_FORM_ID';
+
+    function openGoogleAssessment() {
+      const done = progressSet(activeTrack).size;
+      const total = fullCoursesData[activeTrack].lessons.length;
+      if (done < total) {
+        alert(`Please complete all ${total} learning modules before starting the assessment. Current progress: ${done}/${total}.`);
+        return;
+      }
+      const url = assessmentFormUrls[activeTrack];
+      if (!url || url.includes('REPLACE_')) {
+        alert('This assessment form is not live yet. We are preparing the questionnaire. Please check back later.');
+        return;
+      }
+      window.open(url, '_blank', 'noopener,noreferrer');
+    }
+
+    function openInquiryForm() {
+      if (!inquiryFormUrl || inquiryFormUrl.includes('REPLACE_')) {
+        alert('The institutional enquiry form is not live yet. Please contact DhiQuest directly once the contact details are published.');
+        return;
+      }
+      window.open(inquiryFormUrl, '_blank', 'noopener,noreferrer');
+    }
+
+    const fullCoursesData = {
+      student: {
+        title: "Child Safety, Personal Boundaries & Cyber Awareness (POCSO Track)",
+        subtitle: "Age-appropriate safety guidance, body autonomy, digital grooming indicators, and reporting channels.",
+        tag: "Student & Parent Module",
+        lessons: [
+          {
+            num: "Module 1",
+            title: "Body Autonomy & Safe vs. Unsafe Boundaries",
+            details: [
+              "<strong>Personal Body Boundaries:</strong> Areas covered by a standard swimsuit (chest, area between legs, and buttocks) as well as the mouth are strictly private body boundaries.",
+              "<strong>Safe Touch vs. Unsafe Touch:</strong> A safe touch makes you feel cared for, comfortable, and protected. An unsafe touch makes you feel confused, uneasy, scared, or asks for secrecy.",
+              "<strong>The Rule of Secrets:</strong> Perpetrators often say: 'Do not tell anyone, this is our special secret.' Legitimate adults never demand secrets about physical touch or private body parts."
+            ]
+          },
+          {
+            num: "Module 2",
+            title: "Online Safety, Social Media & Grooming Red Flags",
+            details: [
+              "<strong>Online Grooming Defined:</strong> When an online acquaintance builds emotional closeness through gifts, compliments, or in-game tokens to manipulate you into sharing private images or meeting alone.",
+              "<strong>Digital Boundary Protocols:</strong> Never share live location tags, private photographs, school uniforms, or personal telephone numbers with online contacts.",
+              "<strong>AI & Image Abuse:</strong> If anyone threatens to circulate altered photos or deepfakes, report it immediately to your parents or via the national cybercrime portal (1930 / cybercrime.gov.in). You are not at fault."
+            ]
+          },
+          {
+            num: "Module 3",
+            title: "The 'Safe Circle' Communication Framework",
+            details: [
+              "<strong>Your 3-to-5 Trusted Adults:</strong> Identify trusted individuals (parents, class teachers, school counselors, or grandparents) whom you can confide in without fear of reprimand.",
+              "<strong>The 3-Step Safety Rule:</strong> If an interaction makes you uncomfortable: <em>Say NO firmly, RUN to a public/safe space, and TELL a trusted adult immediately.</em>",
+              "<strong>Peer Protection:</strong> If a friend confides in you about inappropriate touching or bullying, do not keep it a secret. Help them inform a school authority or counselor."
+            ]
+          },
+          {
+            num: "Module 4",
+            title: "Statutory Helplines & Emergency Assistance",
+            details: [
+              "<strong>Childline 1098:</strong> A 24/7, toll-free, emergency phone service for children in need of care and protection, operating nationwide under statutory child welfare frameworks.",
+              "<strong>Confidential Reporting:</strong> Calls to 1098 can be made anonymously from any telephone without caller charges.",
+              "<strong>School Complaint Boxes:</strong> CBSE-mandated grievance boxes located in corridors provide an anonymous reporting avenue directly to the school child safety cell."
+            ]
+          }
+        ],
+        quiz: [
+          {
+            q: "An online gaming acquaintance offers free gaming skins and asks a 14-year-old student for private photos, demanding it be kept secret. What does this indicate?",
+            options: [
+              "A typical online friendship",
+              "A classic online grooming tactic requiring immediate disclosure to a trusted adult",
+              "A harmless prank that should be ignored without telling parents"
+            ],
+            answer: 1,
+            expl: "Offering incentives while demanding secrecy and private photographs is a classic predatory grooming pattern."
+          },
+          {
+            q: "What is the nationwide, 24/7 toll-free emergency helpline number dedicated to child safety in India?",
+            options: ["100", "1098", "102", "1912"],
+            answer: 1,
+            expl: "1098 is the specialized National Childline service dedicated to child protection and emergency intervention."
+          },
+          {
+            q: "Under standard safety rules, when is it appropriate for an adult to touch a child's private body areas?",
+            options: [
+              "Whenever an adult family friend requests it",
+              "During a medical examination by a doctor with a parent or legal guardian present in the room",
+              "If the adult promises a reward or prize"
+            ],
+            answer: 1,
+            expl: "Medical examinations conducted in the presence of parents/guardians are the legitimate standard for physical health checks."
+          },
+          {
+            q: "If an abuser threatens that 'your parents will be harmed if you tell anyone,' what should a child do?",
+            options: [
+              "Keep quiet to protect the family",
+              "Understand this is a standard intimidation lie and report it to a trusted adult immediately",
+              "Wait until turning 18 to disclose"
+            ],
+            answer: 1,
+            expl: "Perpetrators frequently use fear and fabricated threats to silence children. Adults are equipped to handle the threat once informed."
+          },
+          {
+            q: "What should you do if your classmate confides that a staff member made them feel uncomfortable?",
+            options: [
+              "Promise to keep it a secret forever",
+              "Encourage and accompany them to report the matter to a trusted teacher or school counselor",
+              "Post about it on social media"
+            ],
+            answer: 1,
+            expl: "Supporting a peer by connecting them to an authorized school counselor or authority ensures proper protection without breaking legal confidentiality."
+          }
+        ]
+      },
+
+      teacher: {
+        title: "POCSO Act (2012) Statutory Compliance for Educators & Staff",
+        subtitle: "Mandatory reporting, penal liabilities under Section 21, confidentiality safeguards, and CBSE safety guidelines.",
+        tag: "CBSE Statutory Mandate",
+        lessons: [
+          {
+            num: "Module 1",
+            title: "POCSO Act Scope, Definitions & Gender-Neutral Protection",
+            details: [
+              "<strong>Universal Protection:</strong> Under Section 2(1)(d), a 'child' is any individual below 18 years of age. POCSO is gender-neutral and protects both male and female children from sexual abuse.",
+              "<strong>Spectrum of Offences:</strong> The Act penalizes Penetrative Sexual Assault (Sections 3-6), Sexual Assault (Sections 7-8), Sexual Harassment (Sections 11-12), and Child Pornography (Sections 13-15).",
+              "<strong>Aggravated Offences (Section 9):</strong> Stricter minimum sentences apply when offences are committed by individuals in positions of trust and authority, including educators, headmasters, and administrative staff."
+            ]
+          },
+          {
+            num: "Module 2",
+            title: "Section 19: Mandatory Duty to Report & Reporting Channels",
+            details: [
+              "<strong>Mandatory Reporting Duty:</strong> Section 19 places an absolute statutory obligation on any person (including educators, bus staff, and guards) who has knowledge or reasonable apprehension of a sexual offence against a child to report it promptly.",
+              "<strong>Designated Authorities:</strong> Disclosures must be communicated immediately to the <em>Special Juvenile Police Unit (SJPU)</em> or the local police station.",
+              "<strong>No Internal Settlement:</strong> School authorities cannot negotiate, settle, or dispose of a POCSO complaint through internal disciplinary committees without statutory police reporting."
+            ]
+          },
+          {
+            num: "Module 3",
+            title: "Section 21: Penal Consequences for Failure to Report",
+            details: [
+              "<strong>Individual Liability:</strong> Any staff member who fails to report an offence under Section 19 is punishable with imprisonment up to 6 months, a fine, or both.",
+              "<strong>Institutional Head Liability:</strong> If the person in charge or management of a school fails to report an offence committed by an employee, punishment extends up to 1 year imprisonment plus fines.",
+              "<strong>Immunity for Good Faith Reporting:</strong> Section 19(6) protects staff from civil or criminal liability for reporting an incident in good faith."
+            ]
+          },
+          {
+            num: "Module 4",
+            title: "Confidentiality (Section 23) & Trauma-Informed Disclosure Handling",
+            details: [
+              "<strong>Strict Identity Concealment (Section 23):</strong> It is illegal to disclose the identity, name, photograph, school, or address of a victim in public notices, internal staff memos, or media reports. Breach carries up to 1 year imprisonment.",
+              "<strong>CBSE Infrastructure Mandates:</strong> Regular background verification for contract and transport staff, functional CCTV coverage across corridors/entrances (excluding washrooms), and regular monitoring of grievance drop boxes.",
+              "<strong>Receiving a Disclosure:</strong> Stay calm; avoid showing shock or anger. Listen without leading questions, reassure the child that they are not to blame, and document disclosures using the child's exact words without alterations."
+            ]
+          }
+        ],
+        quiz: [
+          {
+            q: "A student confides to their class teacher that an uncle touched them inappropriately at home. What is the teacher's legal duty under Section 19?",
+            options: [
+              "Advise the child to keep family matters within the family",
+              "Report the matter promptly to the Special Juvenile Police Unit (SJPU) or Police",
+              "Wait until the end of the academic year before escalating"
+            ],
+            answer: 1,
+            expl: "Section 19 mandates reporting of abuse regardless of whether it occurred inside the school or outside off-campus."
+          },
+          {
+            q: "Under Section 21 of the POCSO Act, what is the maximum punishment for a person in charge of an institution who fails to report an offence?",
+            options: [
+              "A verbal warning from the education board",
+              "Imprisonment up to one year, or fine, or both",
+              "Only a ₹1,000 fine without imprisonment"
+            ],
+            answer: 1,
+            expl: "Section 21 prescribes up to one year of imprisonment plus fine for heads of institutions who fail to report."
+          },
+          {
+            q: "Can a school principal resolve a POCSO complaint internally through parent-teacher mediation without informing the police?",
+            options: [
+              "Yes, if both parents agree in writing",
+              "No, internal settlement of cognizable POCSO offences is illegal and constitutes failure to report",
+              "Yes, if the student is below 10 years old"
+            ],
+            answer: 1,
+            expl: "The POCSO Act does not permit internal compromise or cover-ups. Mandatory statutory reporting is non-negotiable."
+          },
+          {
+            q: "What does Section 23 of the POCSO Act strictly prohibit?",
+            options: [
+              "CCTV installation in school premises",
+              "Publishing or broadcasting any information that reveals the identity of the child victim",
+              "Conducting physical self-defense classes"
+            ],
+            answer: 1,
+            expl: "Section 23 penalizes revealing the child's identity, photograph, school, or residential details in public or media."
+          },
+          {
+            q: "When a child discloses an incident of sexual abuse, what should a teacher do while documenting the statement?",
+            options: [
+              "Rephrase the child's words into legal terminology",
+              "Record the child's exact words faithfully without asking interrogative or leading questions",
+              "Require the child to write a formal notarized affidavit"
+            ],
+            answer: 1,
+            expl: "Trauma-informed protocol requires capturing the child's exact words verbatim without leading questions or forced rewording."
+          }
+        ]
+      },
+
+      workplace: {
+        title: "POSH Act (2013): Workplace Guidelines & IC Inquiry Protocols",
+        subtitle: "Internal Committee composition, statutory timelines, hostile environment, and complaint adjudication.",
+        tag: "Corporate & IC Governance",
+        lessons: [
+          {
+            num: "Module 1",
+            title: "Legal Framework: Forms of Sexual Harassment & Extended Workplace",
+            details: [
+              "<strong>Quid Pro Quo:</strong> Implied or explicit promise of preferential employment, promotion, or threat of dismissal/detrimental treatment in exchange for sexual favors.",
+              "<strong>Hostile Work Environment:</strong> Unwelcome sexually tinted remarks, stalking, suggestive jokes, or physical gestures that create an intimidating, offensive, or hostile work environment.",
+              "<strong>The 'Extended Workplace':</strong> Section 2(o) covers any location visited by the employee arising out of or during the course of employment, including official transportation, off-site client dinners, and digital communication platforms."
+            ]
+          },
+          {
+            num: "Module 2",
+            title: "Section 4: Internal Committee (IC) Mandate & Composition",
+            details: [
+              "<strong>Threshold for Constitution:</strong> Every employer with 10 or more employees must constitute an Internal Committee (IC) at each administrative office or branch.",
+              "<strong>Statutory Composition:</strong> <em>Presiding Officer:</em> Senior woman employee. <em>Internal Members:</em> At least 2 employees committed to the cause of women. <em>External Member:</em> 1 representative from an NGO or association familiar with POSH laws.",
+              "<strong>Quorum & Gender Balance:</strong> At least 50% of the total committee members must be women. The external member's presence is crucial to eliminate corporate bias."
+            ]
+          },
+          {
+            num: "Module 3",
+            title: "Statutory Complaint Timelines & Redressal Flow",
+            details: [
+              "<strong>Filing Timeline:</strong> A written complaint must be submitted within <strong>3 months</strong> from the date of the incident (extendable by another 3 months if the IC is satisfied with the reasons for delay).",
+              "<strong>Notice to Respondent:</strong> Within 7 working days of receiving the complaint, the IC must send a copy to the respondent, who must reply within 10 working days.",
+              "<strong>Inquiry Timeline (Section 11):</strong> The IC must conclude its formal inquiry within <strong>90 calendar days</strong>, and issue its final report within 10 days thereafter."
+            ]
+          },
+          {
+            num: "Module 4",
+            title: "Conciliation, Interim Relief & Confidentiality (Section 16)",
+            details: [
+              "<strong>Conciliation Option (Section 10):</strong> Before initiating a formal inquiry, the IC may, at the complainant's request, attempt conciliation. Crucially, <em>no monetary settlement can be made the basis of conciliation</em>.",
+              "<strong>Interim Measures:</strong> During the inquiry, the IC may recommend transferring either party, granting paid leave up to 3 months to the complainant, or restraining the respondent from reporting appraisals.",
+              "<strong>Strict Confidentiality (Section 16):</strong> Contents of the complaint, identities, and inquiry proceedings cannot be published or disclosed under the RTI Act or to media. Disclosure can attract consequences under Section 17 and applicable service rules; the exact consequence depends on the circumstances and applicable rules."
+            ]
+          }
+        ],
+        quiz: [
+          {
+            q: "What is the statutory deadline under Section 11(4) for an Internal Committee to complete an inquiry into a POSH complaint?",
+            options: ["30 days", "60 days", "90 days", "180 days"],
+            answer: 2,
+            expl: "Section 11(4) mandates that the Internal Committee must complete its inquiry within 90 calendar days from commencement."
+          },
+          {
+            q: "What is the minimum proportion of women members required in an Internal Committee under Section 4?",
+            options: ["At least 25%", "At least 50%", "At least 75%", "No minimum requirement"],
+            answer: 1,
+            expl: "The POSH Act requires that at least one-half (50%) of the nominated members of the IC must be women."
+          },
+          {
+            q: "Can a monetary settlement be negotiated as the basis of conciliation under Section 10 of the POSH Act?",
+            options: [
+              "Yes, if both parties agree to the amount",
+              "No, monetary settlements are strictly prohibited as the basis of conciliation",
+              "Yes, if approved by the Managing Director"
+            ],
+            answer: 1,
+            expl: "Section 10 explicitly bars any monetary settlement from serving as the foundation of conciliation."
+          },
+          {
+            q: "What constitutes an 'extended workplace' under the POSH Act?",
+            options: [
+              "Only the physical cubicle where an employee sits",
+              "Any place visited by the employee during the course of employment, including company cabs and client dinners",
+              "Only company premises during 9 AM to 5 PM hours"
+            ],
+            answer: 1,
+            expl: "Section 2(o) establishes the 'notional extension of workplace,' covering official off-sites, transit, and virtual communications."
+          },
+          {
+            q: "What is the penalty for violating Section 16 confidentiality regarding POSH complaint details?",
+            options: [
+              "Immediate arrest of the complainant",
+              "Consequences under Section 17 and applicable service rules",
+              "Public apology in newspapers"
+            ],
+            answer: 1,
+            expl: "Section 16 restricts publication or disclosure of complaint contents, identities and proceedings; Section 17 addresses consequences for breach, subject to the Act and applicable rules."
+          }
+        ]
+      }
+    };
+
+    /* =========================
+       SurakshaSetu Interactive Learning Engine v3
+       All 3 tracks / all 12 modules use the same learning model.
+       ========================= */
+    let activeTrack = 'teacher';
+    let activeModule = -1;
+    let currentQ = 0;
+    let score = 0;
+    let answered = false;
+    const moduleState = JSON.parse(localStorage.getItem('suraksha_module_progress') || '{}');
+
+    const richModuleOverrides = {
+      'student-0': {
+        objectives: [
+          'Understand body autonomy and personal boundaries.',
+          'Distinguish appropriate, unwanted and unsafe touch.',
+          'Recognise unsafe secrecy, pressure and manipulation.',
+          'Know how to seek help when a boundary is crossed.'
+        ],
+        sections: [
+          ['My body, my boundaries', 'Your body belongs to you. Personal boundaries can include physical space, touch, privacy, photographs, personal information and online interactions. You have the right to feel safe and respected.'],
+          ['Private areas', 'As a child-safety teaching aid, remember that areas normally covered by underwear or a swimsuit are private. This is an educational safety rule, not statutory wording from POCSO.'],
+          ['Appropriate, unwanted and unsafe touch', 'Some touch can be caring, social or necessary for health and safety. A child can still have a boundary about a hug or other contact. Unsafe situations can involve inappropriate touching, pressure, requests involving private areas, forced removal of clothing, or requests for private images.'],
+          ['Secrets, surprises and pressure', 'A surprise is temporary and is eventually shared. An unsafe secret is something a person pressures a child to hide because it feels frightening, confusing or inappropriate. “Don’t tell anyone” should never be used to make a child feel trapped.'],
+          ['If something happens', 'If it is safe, say STOP or NO, move away and go to a safer place, then tell a trusted adult. If you freeze or cannot speak, that does not mean you agreed. You can write, message or tell another trusted adult.']
+        ],
+        scenarios: [
+          ['A secret about touch', 'An older person says, “This is our secret. Never tell your parents.”', 'Tell a trusted adult and explain what happened.'],
+          ['An unwanted hug', 'A relative wants to hug a child, but the child does not want a hug.', 'Respectfully say you do not want a hug or choose another greeting.'],
+          ['A private photograph', 'Someone asks a child for a private photograph and promises not to share it.', 'Do not send it. Tell a trusted adult and seek help.']
+        ],
+        checks: [
+          ['What is body autonomy?', 'Having a right to personal boundaries and respectful treatment.'],
+          ['What should a child do about an unsafe secret?', 'Tell a trusted adult.'],
+          ['If you cannot say NO in an unsafe situation, does that mean you agreed?', 'No.'],
+          ['If the first trusted adult does not help, what should you do?', 'Tell another trusted adult and keep seeking help.'],
+          ['What is a safer response to a request for a private image?', 'Do not send it and tell a trusted adult.']
+        ],
+        takeaways: ['My body belongs to me.', 'My boundaries deserve respect.', 'Unsafe secrets should be told.', 'If I cannot speak in the moment, I can still ask for help.', 'If one person does not help, I can tell another trusted adult.']
+      }
+    };
+
+    const glossaryTerms = [
+      ['Aggrieved woman','Under the POSH Act, the woman who alleges sexual harassment at the workplace. The statutory definition and applicable circumstances should be checked in Section 2(a).'],
+      ['BNS','Bharatiya Nyaya Sanhita, 2023: the substantive criminal code in force from 1 July 2024, subject to applicable provisions and transitional rules.'],
+      ['BNSS','Bharatiya Nagarik Suraksha Sanhita, 2023: the criminal procedure law.'],
+      ['BSA','Bharatiya Sakshya Adhiniyam, 2023: the evidence law.'],
+      ['Child (POCSO)','A person below eighteen years of age under Section 2(1)(d) of the POCSO Act.'],
+      ['Confidentiality','Restricting disclosure of sensitive complaint and identity information to what the law permits and the process requires. POSH Section 16 and POCSO Section 23 have distinct rules.'],
+      ['Conciliation','Under POSH Section 10, a pre-inquiry process that may be attempted only at the request of the aggrieved woman; monetary settlement cannot be its basis.'],
+      ['Disclosure','When a person shares information about a possible incident. Receive it calmly, avoid blame and leading questions, and follow the required reporting pathway.'],
+      ['Grooming','A pattern of trust-building, manipulation, gifts, secrecy or pressure used to exploit a child. It is an awareness term, not a standalone POCSO offence label.'],
+      ['IC / Internal Committee','The workplace committee constituted by the employer under POSH Section 4 where the Act requires it.'],
+      ['LC / Local Committee','A committee constituted by the District Officer under POSH Section 6 for complaints within its statutory remit.'],
+      ['Quid pro quo','A Latin phrase meaning “this for that”; in a harassment context it can describe linking a work benefit or detriment to unwanted sexual conduct.'],
+      ['Reasonable apprehension','A statutory phrase relevant to POCSO Section 19 reporting; people should not wait for personal investigation or proof before following the required reporting process.'],
+      ['SJPU','Special Juvenile Police Unit, named in POCSO reporting provisions.'],
+      ['Trauma-informed response','A response that prioritises safety, dignity, calm listening, non-blaming language and avoidance of unnecessary repeated retelling.'],
+      ['Vishaka guidelines','Supreme Court guidelines laid down in 1997 for workplace sexual-harassment prevention and redressal until legislation was enacted.'],
+      ['Workplace (POSH)','The statutory definition in Section 2(o) includes specified workplaces and employment-related locations; it is not limited to the employee’s desk.']
+    ];
+    function filterGlossary() {
+      const q = (document.getElementById('glossarySearch')?.value || '').trim().toLowerCase();
+      const list = glossaryTerms.filter(([term, definition]) => !q || term.toLowerCase().includes(q) || definition.toLowerCase().includes(q));
+      document.getElementById('glossaryGrid').innerHTML = list.length ? list.map(([term, definition]) => `<article class="rounded-xl border border-slate-200 bg-slate-50 p-4"><h3 class="font-black text-slate-900">${esc(term)}</h3><p class="text-xs sm:text-sm text-slate-600 leading-relaxed mt-2">${esc(definition)}</p></article>`).join('') : '<p class="text-sm text-slate-500">No matching term. Try a shorter search.</p>';
+    }
+
+    const studyResourcesByTrack = {
+      student: [
+        ['POCSO Act, 2012 — child protection law','https://www.indiacode.nic.in/handle/123456789/17804?sam_handle=123456789%2F2517'],
+        ['POCSO Model Guidelines (official India Code PDF)','https://www.indiacode.nic.in/bitstream/123456789/7746/1/pocso-modelguidelines.pdf'],
+        ['National Cyber Crime Reporting Portal','https://cybercrime.gov.in/']
+      ],
+      teacher: [
+        ['POCSO Act, 2012 — Sections 19, 21 and 23','https://www.indiacode.nic.in/handle/123456789/17804?sam_handle=123456789%2F2517'],
+        ['POCSO Model Guidelines (official India Code PDF)','https://www.indiacode.nic.in/bitstream/123456789/7746/1/pocso-modelguidelines.pdf'],
+        ['Ministry of Women & Child Development — legislation','https://wcd.gov.in/documents/legislations']
+      ],
+      workplace: [
+        ['POSH Act, 2013 — India Code','https://www.indiacode.nic.in/indiacode/handle/123456789/18898?view_type=browse'],
+        ['Women & Child Development — POSH legislation and handbook','https://www.wcd.gov.in/women/legislations'],
+        ['Supreme Court of India — gender sensitisation and judgments','https://www.sci.gov.in/gender-sensitization-and-internal-complaints-committee/']
+      ]
+    };
+
+    function esc(v) {
+      return String(v).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    }
+
+    function stripTags(v) {
+      const d = document.createElement('div');
+      d.innerHTML = v;
+      return d.textContent || d.innerText || '';
+    }
+
+    function detailsToSections(lesson) {
+      return lesson.details.map((d, i) => {
+        const clean = stripTags(d);
+        const match = clean.match(/^([^:]+):\s*(.*)$/);
+        return [match ? match[1] : `Core concept ${i + 1}`, match ? match[2] : clean];
+      });
+    }
+
+    function generatedModuleContent(trackKey, index, lesson) {
+      const key = `${trackKey}-${index}`;
+      if (richModuleOverrides[key]) return richModuleOverrides[key];
+      const sections = detailsToSections(lesson);
+      const title = lesson.title;
+      const details = lesson.details.map(stripTags);
+      const first = details[0] || 'Review the core concept presented in this module.';
+      const second = details[1] || 'Apply the principle to a practical workplace or school scenario.';
+      const third = details[2] || 'Use the relevant reporting, safeguarding or governance process.';
+      const subject = trackKey === 'student' ? 'the learner' : trackKey === 'teacher' ? 'the responsible staff member' : 'the employee or committee member';
+      return {
+        objectives: [
+          `Understand the core principles covered in ${title}.`,
+          `Recognise how the guidance applies to realistic situations.`,
+          `Identify the appropriate action or escalation route.`,
+          `Use the learning to make safer, more compliant decisions.`
+        ],
+        sections,
+        scenarios: [
+          ['Scenario 1 — Recognise the issue', `A situation arises where ${subject} must apply the principle: ${first}`, `Pause, identify the relevant principle and use the appropriate safety, reporting or governance route rather than ignoring the concern.`],
+          ['Scenario 2 — Apply the rule', `A colleague, student or stakeholder asks what should happen next. The relevant guidance is: ${second}`, `Use the documented process, avoid assumptions and escalate through the appropriate channel.`],
+          ['Scenario 3 — Compliance response', `A decision-maker is considering the issue described in this module: ${third}`, `Document the relevant facts, protect confidentiality where required and follow the applicable statutory or institutional procedure.`]
+        ],
+        checks: [
+          ['Which statement best reflects this module?', first],
+          ['What should the learner do when the issue arises?', second],
+          ['Which approach is safest from a compliance perspective?', 'Follow the applicable statutory, safeguarding or institutional process rather than making an informal or unsupported decision.'],
+          ['What should be avoided?', 'Ignoring the issue, suppressing a report, or replacing the prescribed process with an informal workaround.'],
+          ['What is the practical takeaway?', third]
+        ],
+        takeaways: [
+          stripTags(lesson.details[0] || 'Know the core rule.'),
+          stripTags(lesson.details[1] || 'Apply the rule consistently.'),
+          stripTags(lesson.details[2] || 'Use the appropriate escalation route.'),
+          'When in doubt, follow the documented statutory and institutional process.',
+          'Protect people, information and process integrity.'
+        ]
+      };
+    }
+
+    function getContent(trackKey, index) {
+      return generatedModuleContent(trackKey, index, fullCoursesData[trackKey].lessons[index]);
+    }
+
+    function progressSet(trackKey) {
+      if (!moduleState[trackKey]) moduleState[trackKey] = [];
+      return new Set(moduleState[trackKey]);
+    }
+
+    function saveProgress() {
+      localStorage.setItem('suraksha_module_progress', JSON.stringify(moduleState));
+    }
+
+    function updateProgress() {
+      const total = fullCoursesData[activeTrack].lessons.length;
+      const done = progressSet(activeTrack).size;
+      const pct = Math.round((done / total) * 100);
+      document.getElementById('trackProgress').style.width = `${pct}%`;
+      document.getElementById('trackProgressText').innerText = `${done}/${total} modules • ${pct}% complete`;
+    }
+
+    function updateCardSelectionVisuals(selectedKey) {
+      ['student','teacher','workplace'].forEach(k => {
+        const el = document.getElementById(`card-${k}`);
+        if (!el) return;
+        el.className = k === selectedKey
+          ? 'glass-card-active rounded-2xl p-5 cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-xl flex flex-col justify-between relative'
+          : 'glass-card rounded-2xl p-5 cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-xl flex flex-col justify-between relative';
+      });
+    }
+
+    function loadTrack(trackKey) {
+      activeTrack = trackKey;
+      activeModule = -1;
+      updateCardSelectionVisuals(trackKey);
+      const data = fullCoursesData[trackKey];
+      document.getElementById('activeTrackTag').innerText = data.tag;
+      document.getElementById('activeTrackTitle').innerText = data.title;
+      document.getElementById('activeTrackSubtitle').innerText = data.subtitle;
+      document.getElementById('trackProgressWrap').classList.remove('hidden');
+      document.getElementById('quizContainer').classList.add('hidden');
+      document.getElementById('resultContainer').classList.add('hidden');
+      document.getElementById('certificateSection').classList.add('hidden');
+      renderModules();
+      updateProgress();
+      lucide.createIcons();
+    }
+
+    function renderModules() {
+      const data = fullCoursesData[activeTrack];
+      const done = progressSet(activeTrack);
+      let modulesHtml = '';
+      data.lessons.forEach((lesson, i) => {
+        const content = getContent(activeTrack, i);
+        const isOpen = activeModule === i;
+        const completed = done.has(i);
+        modulesHtml += `
+          <article id="moduleCard-${i}" class="bg-white/85 border ${isOpen ? 'border-emerald-400 shadow-lg' : 'border-slate-200'} rounded-2xl overflow-hidden transition-all">
+            <button type="button" onclick="toggleModule(${i})" class="w-full text-left p-5 flex items-center gap-4 hover:bg-slate-50 transition">
+              <div class="w-11 h-11 shrink-0 rounded-xl ${completed ? 'bg-emerald-600 text-white' : 'bg-emerald-50 text-emerald-800'} flex items-center justify-center font-black">
+                ${completed ? '<i data-lucide="check" class="w-5 h-5"></i>' : i + 1}
+              </div>
+              <div class="flex-1 min-w-0">
+                <div class="flex flex-wrap gap-2 items-center">
+                  <span class="text-[9px] uppercase tracking-widest font-black text-emerald-700">${lesson.num}</span>
+                  <span class="text-[9px] font-bold bg-slate-100 text-slate-600 px-2 py-1 rounded">${content.sections.length} learning sections</span>
+                  <span class="text-[9px] font-bold bg-amber-50 text-amber-700 px-2 py-1 rounded">Micro-learning</span>
+                </div>
+                <h3 class="font-black text-slate-900 text-base sm:text-lg mt-1">${esc(lesson.title)}</h3>
+              </div>
+              <i data-lucide="${isOpen ? 'chevron-up' : 'chevron-down'}" class="w-5 h-5 text-slate-400 shrink-0"></i>
+            </button>
+            <div class="${isOpen ? '' : 'hidden'} border-t border-slate-200 p-5 sm:p-7">
+              ${renderModuleContent(content, i, completed)}
+            </div>
+          </article>`;
+      });
+      document.getElementById('modulesContainer').innerHTML = `<div class="space-y-4">${modulesHtml}</div>`;
+      lucide.createIcons();
+    }
+
+    function renderModuleContent(content, index, completed) {
+      const objectiveHtml = content.objectives.map(x => `<li class="text-xs sm:text-sm text-slate-700 flex gap-2"><span class="text-emerald-600 font-black">✓</span><span>${esc(x)}</span></li>`).join('');
+      const sectionHtml = content.sections.map((s,n) => `
+        <div class="bg-slate-50 border-l-4 border-emerald-500 rounded-r-2xl p-5">
+          <div class="flex gap-3"><span class="w-7 h-7 shrink-0 rounded-lg bg-white border flex items-center justify-center text-xs font-black text-emerald-700">${n+1}</span><div><h4 class="font-black text-slate-900">${esc(s[0])}</h4><p class="text-xs sm:text-sm text-slate-700 leading-7 mt-2">${esc(s[1])}</p></div></div>
+        </div>`).join('');
+      const scenarioHtml = content.scenarios.map((s,n) => `
+        <div class="bg-gradient-to-br from-emerald-50 to-cyan-50 border border-emerald-100 rounded-2xl p-5">
+          <span class="text-[9px] uppercase tracking-widest font-black text-emerald-700">Scenario ${n+1}</span>
+          <h5 class="font-black text-slate-900 mt-2">${esc(s[0])}</h5>
+          <p class="text-xs text-slate-700 leading-relaxed mt-2">${esc(s[1])}</p>
+          <div class="mt-3 pt-3 border-t border-emerald-100 text-xs text-slate-700"><strong class="text-emerald-800">Recommended response:</strong> ${esc(s[2])}</div>
+        </div>`).join('');
+      const checksHtml = content.checks.map((q,n) => `
+        <details class="bg-white/5 rounded-xl p-4 border border-white/10"><summary class="cursor-pointer text-xs sm:text-sm font-bold">${n+1}. ${esc(q[0])}</summary><div class="mt-3 text-xs text-emerald-300"><strong>Answer:</strong> ${esc(q[1])}</div></details>`).join('');
+      const takeawaysHtml = content.takeaways.map(x => `<li class="text-xs text-amber-950 flex gap-2"><span>•</span><span>${esc(x)}</span></li>`).join('');
+      return `
+        <div class="rounded-2xl bg-emerald-50 border border-emerald-200 p-5 mb-6">
+          <div class="text-[10px] uppercase tracking-widest font-black text-emerald-800">Learning objectives</div>
+          <ul class="mt-3 grid sm:grid-cols-2 gap-2">${objectiveHtml}</ul>
+        </div>
+        <div><div class="flex items-center gap-2 mb-3"><i data-lucide="book-open" class="w-4 h-4 text-emerald-600"></i><h4 class="font-black text-slate-900">Learn</h4></div><div class="space-y-4">${sectionHtml}</div></div>
+        <div class="mt-7"><div class="flex items-center gap-2 mb-3"><i data-lucide="sparkles" class="w-4 h-4 text-amber-500"></i><h4 class="font-black text-slate-900">Scenario Lab</h4></div><div class="grid md:grid-cols-3 gap-4">${scenarioHtml}</div></div>
+        <div class="mt-7 rounded-2xl bg-slate-950 text-white p-5"><div class="flex items-center gap-2"><i data-lucide="brain" class="w-4 h-4 text-emerald-400"></i><h4 class="font-black">Quick Knowledge Check</h4></div><p class="text-[11px] text-slate-400 mt-1">These reinforcement checks do not affect the final assessment score.</p><div class="mt-4 grid md:grid-cols-2 gap-3">${checksHtml}</div></div>
+        <div class="mt-7 rounded-2xl bg-amber-50 border border-amber-200 p-5"><div class="flex items-center gap-2"><i data-lucide="star" class="w-4 h-4 text-amber-600"></i><h4 class="font-black text-amber-950">Remember</h4></div><ul class="mt-3 space-y-2">${takeawaysHtml}</ul></div>
+        <div class="mt-7 rounded-2xl border border-indigo-100 bg-indigo-50/70 p-5"><div class="flex items-center gap-2"><i data-lucide="book-marked" class="w-4 h-4 text-indigo-700"></i><h4 class="font-black text-indigo-950">Further reading — official resources</h4></div><div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 mt-4">${studyResourcesByTrack[activeTrack].map(([label,url]) => `<a class="rounded-xl bg-white border border-indigo-100 p-3 text-xs font-bold text-indigo-900 hover:shadow-sm" href="${url}" target="_blank" rel="noopener noreferrer">${esc(label)} <span aria-hidden="true">↗</span></a>`).join('')}</div><p class="text-[10px] text-slate-500 mt-3">External resources open in a new tab. These are study aids; consult the current legislation and rules for authoritative interpretation.</p></div>
+        <div class="mt-6 flex justify-end"><button onclick="completeModule(${index})" class="${completed ? 'bg-emerald-100 text-emerald-800' : 'bg-emerald-700 hover:bg-emerald-800 text-white'} font-black text-xs px-5 py-3 rounded-xl flex items-center gap-2">${completed ? '<i data-lucide="check-circle" class="w-4 h-4"></i> Module Completed' : '<i data-lucide="circle-check" class="w-4 h-4"></i> Mark Module Complete'}</button></div>`;
+    }
+
+    function toggleModule(index) {
+      activeModule = activeModule === index ? -1 : index;
+      renderModules();
+      lucide.createIcons();
+    }
+
+    function completeModule(index) {
+      if (!moduleState[activeTrack]) moduleState[activeTrack] = [];
+      if (!moduleState[activeTrack].includes(index)) moduleState[activeTrack].push(index);
+      saveProgress();
+      activeModule = index;
+      renderModules();
+      updateProgress();
+      lucide.createIcons();
+    }
+
+    function startAssessment() {
+      // Legacy compatibility: final assessments now run through Google Forms.
+      openGoogleAssessment();
+    }
+
+    function renderQuizQuestion() {
+      const track = fullCoursesData[activeTrack];
+      const q = track.quiz[currentQ];
+      answered = false;
+      document.getElementById('quizProgressText').innerText = `Question ${currentQ + 1} of ${track.quiz.length}`;
+      document.getElementById('questionBox').innerHTML = `<p class="font-black text-sm sm:text-base text-slate-900 leading-snug">${esc(q.q)}</p>`;
+      const list = document.getElementById('optionsList');
+      list.innerHTML = q.options.map((opt,idx)=>`<button onclick="selectAnswer(${idx})" id="opt-btn-${idx}" class="w-full text-left p-4 border border-slate-200 bg-white rounded-xl text-xs sm:text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:border-emerald-300 transition">${esc(opt)}</button>`).join('');
+      document.getElementById('feedbackBox').classList.add('hidden');
+      document.getElementById('nextBtn').classList.add('hidden');
+    }
+
+    function selectAnswer(idx) {
+      if (answered) return;
+      answered = true;
+      const q = fullCoursesData[activeTrack].quiz[currentQ];
+      const correct = idx === q.answer;
+      if (correct) score++;
+      document.querySelectorAll('#optionsList button').forEach((b,i)=>{b.disabled=true;if(i===q.answer)b.classList.add('bg-emerald-100','border-emerald-500');if(i===idx&&!correct)b.classList.add('bg-rose-100','border-rose-500');});
+      const fb = document.getElementById('feedbackBox');
+      fb.className = `mt-4 p-4 rounded-xl text-xs sm:text-sm leading-relaxed ${correct?'bg-emerald-50 text-emerald-950 border border-emerald-300':'bg-rose-50 text-rose-950 border border-rose-300'}`;
+      fb.innerHTML = `<strong>${correct?'Correct:':'Review:'}</strong> ${esc(q.expl)}`;
+      fb.classList.remove('hidden');
+      const next = document.getElementById('nextBtn');
+      next.innerText = currentQ < fullCoursesData[activeTrack].quiz.length - 1 ? 'Continue to Next Question' : 'View Final Score & Results';
+      next.classList.remove('hidden');
+    }
+
+    function nextQuestion() {
+      if (currentQ < fullCoursesData[activeTrack].quiz.length - 1) { currentQ++; renderQuizQuestion(); }
+      else finishAssessment();
+    }
+
+    function finishAssessment() {
+      document.getElementById('quizContainer').classList.add('hidden');
+      openGoogleAssessment();
+    }
+
+    function generateCertificate() {
+      alert('Certificates are not generated automatically on this website. DhiQuest reviews the external assessment, confirms payment, and then prepares and shares the certificate manually.');
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      loadTrack('teacher');
+      filterGlossary();
+      const inquiryButton = document.getElementById('inquiryFormButton');
+      if (inquiryButton) inquiryButton.href = '#contact';
+      lucide.createIcons();
+    });
+</script>
+</body>
+</html>
